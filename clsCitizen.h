@@ -4,6 +4,7 @@
 #include <string>
 #include <fstream>
 #include "clsPerson.h"
+#include "clsPerson.h"
 #include "clsstring.h"
 
 class clsCitizen: public clsPerson
@@ -44,73 +45,8 @@ class clsCitizen: public clsPerson
 		return Line;
 	}
 
-	static vector<clsCitizen> _LoadCitizenDataFromFile()
-	{
-		vector<clsCitizen> vCitizens;
-
-		fstream MyFile;
-
-		MyFile.open("Citizens.txt", ios::in);
-
-		if (MyFile.is_open())
-		{
-			string Line;
-
-			while (getline(MyFile, Line))
-			{
-				clsCitizen C = _ConvertLineToCitizenObject(Line);
-
-				vCitizens.push_back(C);
-			}
-
-			MyFile.close();
-		}
-
-		return vCitizens;
-	}
-
-	static void _SaveCitizenDataToFile(vector<clsCitizen> vCitizens)
-	{
-		fstream MyFile;
-		string Line;
-
-		MyFile.open("Citizens.txt", ios::out);
-
-		if (MyFile.is_open())
-		{
-			for (auto C : vCitizens)
-			{
-				Line = _ConvertCitizenObjectToLine(C);
-
-				MyFile << Line << endl;
-			}
-
-			MyFile.close();
-		}
-
-	}
-
-	void _AddDataLineToFile(string  stDataLine)
-	{
-		fstream MyFile;
-		MyFile.open("Citizens.txt", ios::out | ios::app);
-
-		if (MyFile.is_open())
-		{
-
-			MyFile << stDataLine << endl;
-
-			MyFile.close();
-		}
-
-	}
-
-	void _AddNew()
-	{
-		_AddDataLineToFile(_ConvertCitizenObjectToLine(*this));
-	}
-
 public:
+	clsCitizen () {}
 
 	clsCitizen(string name, string id, string phone, string adress, int age, string email,
 		string pass, string socialNum, string visaNum, string visaPass, double elct)
@@ -126,6 +62,11 @@ public:
 	string getPassword()
 	{
 		return _Password;
+	}
+
+	void setSocialSecurityNumber(string num)
+	{
+		_SocialSecurityNumber = num;
 	}
 
 	string getSocialSecurityNumber()
@@ -146,6 +87,192 @@ public:
 	float getElectricityBill()
 	{
 		return _ElectricityBill;
+	}
+
+	void ShowInfo()
+	{
+		cout << "\n\t\t________________________________________\n";
+		cout << "\t\t\tCitizens Information" << endl;
+		cout << "\n\t\t________________________________________\n\n";
+
+		cout << "\nName: " << clsPerson::getFullName();
+		cout << "\nAge: " << clsPerson::getAge();
+		cout << "\nAdress: " << clsPerson::getAdress();
+		cout << "\nPhone: " << clsPerson::getPhoneNumber();
+	}
+
+	static vector<clsCitizen> LoadCitizenDataFromFile()
+	{
+		vector<clsCitizen> vCitizens;
+
+		fstream MyFile;
+
+		MyFile.open("Citizens.txt", ios::in);
+
+		try
+		{
+			if (MyFile.is_open())
+			{
+				string Line;
+
+				while (getline(MyFile, Line))
+				{
+					clsCitizen C = _ConvertLineToCitizenObject(Line);
+
+					vCitizens.push_back(C);
+				}
+
+				MyFile.close();
+			}
+
+			return vCitizens;
+		}
+		catch (...)
+		{
+			cout << "\nError during oppening the file :(\n";
+		}
+		
+	}
+
+	static void SaveCitizenDataToFile(vector<clsCitizen> vCitizens)
+	{
+		fstream MyFile;
+		string Line;
+
+		MyFile.open("Citizens.txt", ios::out);
+
+		try
+		{
+			if (MyFile.is_open())
+			{
+				for (auto C : vCitizens)
+				{
+					Line = _ConvertCitizenObjectToLine(C);
+
+					MyFile << Line << endl;
+				}
+
+				MyFile.close();
+			}
+		}
+		catch (...)
+		{
+			cout << "\nError during oppening the file :(\n";
+		}
+		
+
+	}
+
+	void AddDataLineToFile(string  stDataLine)
+	{
+		fstream MyFile;
+		MyFile.open("Citizens.txt", ios::out | ios::app);
+
+		try
+		{
+			if (MyFile.is_open())
+			{
+
+				MyFile << stDataLine << endl;
+
+				MyFile.close();
+			}
+		}
+		catch (...)
+		{
+			cout << "\nError during oppening the file :(\n";
+		}
+
+
+	}
+
+	void AddNew()
+	{
+		AddDataLineToFile(_ConvertCitizenObjectToLine(*this));
+	}
+
+	static bool CitizenExists(clsCitizen Citizen)
+	{
+		fstream MyFile;
+
+		MyFile.open("Citizens.txt", ios::in);
+
+		try
+		{
+			if (MyFile.is_open())
+			{
+				string Line;
+
+				while (getline(MyFile, Line))
+				{
+					clsCitizen C = _ConvertLineToCitizenObject(Line);
+
+					if (Citizen.getNationalID() == C.getNationalID())
+					{
+						MyFile.close();
+
+						return true;
+					}
+
+				}
+
+				MyFile.close();
+
+				return false;
+			}
+		}
+		catch (...)
+		{
+			cout << "\nError during oppening the file :(\n";
+		}
+
+		
+	}
+
+	friend istream& operator>>(istream& is, clsCitizen& C)
+	{
+		cout << "\nEnter your Full name: ";
+		is.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		getline(is, C._FullName);
+
+		do
+		{
+			cout << "\nEnter your National ID: ";
+			is >> C._NationalID;
+		} while (C._NationalID.length() != 14);
+
+		do
+		{
+			cout << "\nEnter your phone number: ";
+			is >> C._PhoneNumber;
+		} while (C._PhoneNumber.length() != 11);
+
+		is.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		cout << "\nEnter your adress: ";
+		getline(is, C._Adress);
+
+		cout << "\nEnter your age: ";
+		is >> C._Age;
+
+		cout << "\nEnter your email: ";
+		is >> C._Email;
+
+		cout << "\nEnter your password: ";
+		is >> C._Password;
+
+		cout << "\nEnter your social security number: ";
+		is >> C._SocialSecurityNumber;
+
+		cout << "\nEnter your visa card number: ";
+		is >> C._VisaCardNumber;
+
+		cout << "\nEnter your visa card password: ";
+		is >> C._VisaCardPassword;
+
+		cout << "\nEnter your Elictricity bill: ";
+		is >> C._ElectricityBill;
+
+		return is;
 	}
 
 };

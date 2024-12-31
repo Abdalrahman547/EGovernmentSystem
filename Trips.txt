@@ -1,0 +1,47 @@
+2544|-|2214|-|cairo|-|sidi gaber|-|Saturday|-|22:50|-|19:00|-|70
+2545|-|2215|-|alexandria|-|cairo|-|Sunday|-|18:30|-|15:00|-|75
+2546|-|2216|-|giza|-|aswan|-|Monday|-|20:00|-|16:30|-|80
+2547|-|2217|-|luxor|-|hurghada|-|Tuesday|-|21:15|-|18:00|-|65
+2548|-|2218|-|aswan|-|cairo|-|Wednesday|-|23:00|-|20:00|-|90
+2549|-|2219|-|sidi gaber|-|alexandria|-|Thursday|-|19:45|-|16:20|-|85
+2550|-|2220|-|cairo|-|luxor|-|Friday|-|17:30|-|14:00|-|95
+2551|-|2221|-|giza|-|hurghada|-|Saturday|-|22:10|-|18:50|-|100
+2552|-|2222|-|aswan|-|sidi gaber|-|Sunday|-|21:25|-|17:45|-|105
+2553|-|2223|-|alexandria|-|giza|-|Monday|-|19:10|-|15:30|-|110
+2554|-|2224|-|cairo|-|aswan|-|Tuesday|-|23:50|-|20:15|-|115
+2555|-|2225|-|sidi gaber|-|luxor|-|Wednesday|-|18:45|-|15:00|-|120
+2556|-|2226|-|hurghada|-|cairo|-|Thursday|-|21:35|-|17:20|-|125
+2557|-|2227|-|aswan|-|giza|-|Friday|-|20:50|-|16:30|-|130
+2558|-|2228|-|luxor|-|sidi gaber|-|Saturday|-|19:55|-|15:50|-|135
+2559|-|2229|-|cairo|-|hurghada|-|Sunday|-|22:45|-|19:00|-|140
+2560|-|2230|-|giza|-|alexandria|-|Monday|-|21:00|-|17:15|-|145
+2561|-|2231|-|aswan|-|luxor|-|Tuesday|-|19:30|-|16:10|-|150
+2562|-|2232|-|sidi gaber|-|cairo|-|Wednesday|-|18:50|-|14:40|-|155
+2563|-|2233|-|hurghada|-|giza|-|Thursday|-|23:25|-|19:45|-|160
+2564|-|2234|-|alexandria|-|aswan|-|Friday|-|22:15|-|18:25|-|165
+2565|-|2235|-|cairo|-|sidi gaber|-|Saturday|-|21:40|-|18:20|-|170
+2566|-|2236|-|giza|-|hurghada|-|Sunday|-|20:35|-|16:45|-|175
+2567|-|2237|-|luxor|-|alexandria|-|Monday|-|23:05|-|19:15|-|180
+2568|-|2238|-|aswan|-|cairo|-|Tuesday|-|22:30|-|18:40|-|185
+2569|-|2239|-|sidi gaber|-|giza|-|Wednesday|-|21:20|-|17:30|-|190
+2570|-|2240|-|hurghada|-|luxor|-|Thursday|-|20:00|-|16:00|-|195
+2571|-|2241|-|alexandria|-|sidi gaber|-|Friday|-|19:30|-|15:45|-|200
+2572|-|2242|-|cairo|-|aswan|-|Saturday|-|18:25|-|14:35|-|205
+2573|-|2243|-|giza|-|cairo|-|Sunday|-|23:40|-|19:50|-|210
+2574|-|2244|-|luxor|-|giza|-|Monday|-|22:05|-|18:10|-|215
+2575|-|2245|-|aswan|-|hurghada|-|Tuesday|-|21:25|-|17:35|-|220
+2576|-|2246|-|sidi gaber|-|alexandria|-|Wednesday|-|20:15|-|16:30|-|225
+2577|-|2247|-|hurghada|-|cairo|-|Thursday|-|19:05|-|15:20|-|230
+2578|-|2248|-|alexandria|-|giza|-|Friday|-|23:35|-|19:45|-|235
+2579|-|2249|-|cairo|-|luxor|-|Saturday|-|22:25|-|18:35|-|240
+2580|-|2250|-|giza|-|aswan|-|Sunday|-|21:15|-|17:25|-|245
+2581|-|2251|-|luxor|-|sidi gaber|-|Monday|-|20:55|-|16:55|-|250
+2582|-|2252|-|aswan|-|cairo|-|Tuesday|-|19:45|-|15:55|-|255
+2583|-|2253|-|sidi gaber|-|hurghada|-|Wednesday|-|18:35|-|14:45|-|260
+2584|-|2254|-|hurghada|-|giza|-|Thursday|-|23:55|-|20:05|-|265
+2585|-|2255|-|alexandria|-|aswan|-|Friday|-|22:45|-|18:55|-|270
+2586|-|2256|-|cairo|-|sidi gaber|-|Saturday|-|21:35|-|17:45|-|275
+2587|-|2257|-|giza|-|hurghada|-|Sunday|-|20:25|-|16:35|-|280
+2588|-|2258|-|luxor|-|alexandria|-|Monday|-|19:15|-|15:25|-|285
+2589|-|2259|-|aswan|-|cairo|-|Tuesday|-|18:05|-|14:15|-|290
+2590|-|2260|-|sidi gaber|-|giza|-|Wednesday|-|23:30|-|19:40|-|295

@@ -5,18 +5,23 @@
 #include <fstream>
 #include "clsPerson.h"
 #include "clsstring.h"
-
 using namespace std;
+
+
 class clsEmployee : public clsPerson
 {
 	string _Position;
+	string _Ministry;
+	string _Department;
+
+	bool _MarkForDelete = false;
 
 	static clsEmployee _ConvertLineToEmployeeObject(string DataLine, string delim = "|-|")
 	{
 		vector<string> vEmployeeData = clsString::Split(DataLine, delim);
 
-		return clsEmployee(vEmployeeData[0], vEmployeeData[1], vEmployeeData[2],
-			vEmployeeData[3], stoi(vEmployeeData[4]), vEmployeeData[5], vEmployeeData[6]);
+		return clsEmployee(vEmployeeData[0], vEmployeeData[1], vEmployeeData[2], vEmployeeData[3],
+			stoi(vEmployeeData[4]), vEmployeeData[5], vEmployeeData[6], vEmployeeData[7], vEmployeeData[8]);
 
 	}
 
@@ -30,12 +35,48 @@ class clsEmployee : public clsPerson
 		Line += E.getAdress() + delim;
 		Line += to_string(E.getAge()) + delim;
 		Line += E.getEmail() + delim;
-		Line += E.getPosition();
+		Line += E.getPosition() + delim;
+		Line += E.getMinistryName() + delim;
+		Line += E.getDepartmentName();
 
 		return Line;
 	}
 
-	static vector<clsEmployee> _LoadEmployeesDataFromFile()
+
+public:
+
+
+	clsEmployee () {}
+
+	clsEmployee(string name, string id, string phone, string adress, int age, string email, string pos, string Minstry, string dep)
+		:clsPerson(name, id, phone, adress, age, email)
+	{
+		_Position = pos;
+		_Ministry = Minstry;
+		_Department = dep;
+	}
+
+	string getPosition()
+	{
+		return _Position;
+	}
+
+	string getDepartmentName()
+	{
+		return _Department;
+	}
+
+	string getMinistryName()
+	{
+		return _Ministry;
+	}
+
+	void MarkforDeleted()
+	{
+		_MarkForDelete = true;
+	}
+
+	static vector<clsEmployee> LoadEmployeesDataFromFile()
 	{
 		vector<clsEmployee> vEmployees;
 
@@ -43,75 +84,209 @@ class clsEmployee : public clsPerson
 
 		MyFile.open("Employees.txt", ios::in);
 
-		if (MyFile.is_open())
+		try
 		{
-			string Line;
-
-			while (getline(MyFile, Line))
+			if (MyFile.is_open())
 			{
-				clsEmployee E = _ConvertLineToEmployeeObject(Line);
+				string Line;
 
-				vEmployees.push_back(E);
+				while (getline(MyFile, Line))
+				{
+					clsEmployee E = _ConvertLineToEmployeeObject(Line);
+
+					vEmployees.push_back(E);
+
+				}
+
+				MyFile.close();
 			}
 
-			MyFile.close();
+			return vEmployees;
+		}
+		catch (...)
+		{
+			cout << "\nError during oppening the file :(\n";
 		}
 
-		return vEmployees;
+		
 	}
 
-	static void _SaveClientsDataToFile(vector<clsEmployee> vEmployees)
+	static vector<clsEmployee> LoadEmployeesDataFromFile(string Department)
+	{
+		vector<clsEmployee> vEmployees;
+
+		fstream MyFile;
+
+		MyFile.open("Employees.txt", ios::in);
+
+		try
+		{
+			if (MyFile.is_open())
+			{
+				string Line;
+
+				while (getline(MyFile, Line))
+				{
+					clsEmployee E = _ConvertLineToEmployeeObject(Line);
+
+					if (E.getDepartmentName() == Department)
+						vEmployees.push_back(E);
+
+				}
+
+				MyFile.close();
+			}
+
+			return vEmployees;
+		}
+		catch (...)
+		{
+			cout << "\nError during oppening the file :(\n";
+		}
+
+		
+	}
+
+	static void SaveEmployeesDataToFile(vector<clsEmployee> vEmployees)
 	{
 		fstream MyFile;
 		string Line;
 
 		MyFile.open("Employees.txt", ios::out);
 
-		if (MyFile.is_open())
+		try
 		{
-			for (auto E : vEmployees)
+			if (MyFile.is_open())
 			{
-				Line = _ConvertEmployeeObjectToLine(E);
+				for (auto E : vEmployees)
+				{
+					if (!E._MarkForDelete)
+					{
+						Line = _ConvertEmployeeObjectToLine(E);
 
-				MyFile << Line << endl;
+						MyFile << Line << endl;
+					}
+				}
+
+				MyFile.close();
 			}
-
-			MyFile.close();
+		}
+		catch (...)
+		{
+			cout << "\nError during oppening the file :(\n";
 		}
 
 	}
 
-	void _AddDataLineToFile(string  stDataLine)
+	void AddDataLineToFile(string  stDataLine)
 	{
 		fstream MyFile;
 		MyFile.open("Employees.txt", ios::out | ios::app);
 
-		if (MyFile.is_open())
+		try
 		{
+			if (MyFile.is_open())
+			{
 
-			MyFile << stDataLine << endl;
+				MyFile << stDataLine << endl;
 
-			MyFile.close();
+				MyFile.close();
+			}
+		}
+		catch (...)
+		{
+			cout << "\nError during oppening the file :(\n";
 		}
 
+		
+
 	}
 
-	void _AddNew()
+	static bool EmployeeExists(clsEmployee Employee)
 	{
-		_AddDataLineToFile(_ConvertEmployeeObjectToLine(*this));
+		fstream MyFile;
+
+		MyFile.open("Employees.txt", ios::in);
+
+		try
+		{
+			if (MyFile.is_open())
+			{
+				string Line;
+
+				while (getline(MyFile, Line))
+				{
+					clsEmployee E = _ConvertLineToEmployeeObject(Line);
+
+					if (E.getNationalID() == Employee.getNationalID())
+					{
+						MyFile.close();
+
+						return true;
+					}
+
+				}
+
+				MyFile.close();
+
+				return false;
+			}
+		}
+		catch (...)
+		{
+			cout << "\nError during oppening the file :(\n";
+		}
+
+		
 	}
 
-public:
-
-	clsEmployee(string name, string id, string phone, string adress, int age, string email, string pos)
-		:clsPerson(name, id, phone, adress, age, email)
+	void AddNew()
 	{
-		_Position = pos;
+		AddDataLineToFile(_ConvertEmployeeObjectToLine(*this));
 	}
 
-	string getPosition()
+	friend istream& operator >> (istream& I, clsEmployee& E)
 	{
-		return _Position;
+		cout << "In what Ministry he will work in? ";
+		cin >> E._Ministry;
+
+		cout << "\nEnter Employee Full name: ";
+		I.ignore(numeric_limits<streamsize>::max(), '\n');
+
+		getline(I, E._FullName);
+
+		do
+		{
+			cout << "\nHis National ID: ";
+			I >> E._NationalID;
+
+		} while (E._NationalID.length() != 14);
+		
+		do
+		{
+			cout << "\nHis phone number: ";
+			I >> E._PhoneNumber;
+		} while (E._PhoneNumber.length() != 11);
+
+		cout << "\nHis adress: ";
+		I.ignore(numeric_limits<streamsize>::max(), '\n');
+		getline(I, E._Adress);
+
+		cout << "\nHis Age: ";
+		cin >> E._Age;
+
+		cout << "\nHis email: ";
+		I >> E._Email;
+
+		cout << "\nHis Departments: ";
+		I.ignore(numeric_limits<streamsize>::max(), '\n');
+		getline(I, E._Department);
+
+		cout << "\nHis position: ";
+		getline(I, E._Position);
+
+		return I;
 	}
+
 };
 

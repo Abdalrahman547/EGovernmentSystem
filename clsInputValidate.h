@@ -49,7 +49,6 @@ public:
 		return false;
 	}
 
-
 	static int ReadIntNumber(string ErrorMessage = "Invalid Number, Enter again\n")
 	{
 		int Number;
@@ -139,7 +138,6 @@ public:
 		}
 		return Number;
 	}
-
 
 	static bool IsValideDate(clsDate Date)
 	{

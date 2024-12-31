@@ -320,18 +320,23 @@ public:
         while ((pos = S1.find(Delim)) != std::string::npos)
         {
             sWord = S1.substr(0, pos); // store the word   
-            if (sWord != "")
+               
+            vString.push_back(sWord);
+            
+            /*if (sWord != "")
             {
                 vString.push_back(sWord);
-            }
+            }*/
 
             S1.erase(0, pos + Delim.length());  /* erase() until positon and move to next word. */
         }
 
-        if (S1 != "")
-        {
-            vString.push_back(S1); // it adds last word of the string.
-        }
+        vString.push_back(S1); // it adds last word of the string.
+        
+        //if (S1 != "")
+        //{
+        //    vString.push_back(S1); // it adds last word of the string.
+        //}
 
         return vString;
 

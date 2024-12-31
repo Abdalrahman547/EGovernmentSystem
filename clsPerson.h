@@ -4,6 +4,7 @@ using namespace std;
 
 class clsPerson
 {
+protected:
 	string _FullName;
 	string _NationalID;
 	string _PhoneNumber;
@@ -12,6 +13,8 @@ class clsPerson
 	string _Email;
 
 public:
+
+	clsPerson() {}
 
 	clsPerson(string name, string id, string phone, string adress, int age, string email)
 	{

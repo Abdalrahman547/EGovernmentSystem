@@ -19,6 +19,18 @@
     <Filter Include="Header Files\Core">
       <UniqueIdentifier>{999ec17f-d1d5-4a62-987b-331592fc15df}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Ministries">
+      <UniqueIdentifier>{92980c4d-ec5e-4649-a60c-089a1b24c9bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Others">
+      <UniqueIdentifier>{5e418ac0-f1fa-4f03-9b8e-22618fa9fa20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Owner Screens">
+      <UniqueIdentifier>{3d59f2b3-d9d3-4e20-a2d3-e9181222a8ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Citzen Screens">
+      <UniqueIdentifier>{58b8b6c8-be7e-4750-9f9b-5a1307ebee73}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EGovernmentSystem.cpp">
@@ -43,6 +55,96 @@
     </ClInclude>
     <ClInclude Include="clsEmployee.h">
       <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="clsMinistryOfEducation.h">
+      <Filter>Header Files\Ministries</Filter>
+    </ClInclude>
+    <ClInclude Include="clsMinistryOfInterior.h">
+      <Filter>Header Files\Ministries</Filter>
+    </ClInclude>
+    <ClInclude Include="MinistryOfFinance.h">
+      <Filter>Header Files\Ministries</Filter>
+    </ClInclude>
+    <ClInclude Include="clsMinistry.h">
+      <Filter>Header Files\Ministries</Filter>
+    </ClInclude>
+    <ClInclude Include="MinistryOfHealthAndPopulation.h">
+      <Filter>Header Files\Ministries</Filter>
+    </ClInclude>
+    <ClInclude Include="MinistryOfTourism.h">
+      <Filter>Header Files\Ministries</Filter>
+    </ClInclude>
+    <ClInclude Include="clsMinistryOfTransportaion.h">
+      <Filter>Header Files\Ministries</Filter>
+    </ClInclude>
+    <ClInclude Include="clsDepartment.h">
+      <Filter>Header Files\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="clsExam.h">
+      <Filter>Header Files\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="clsForm.h">
+      <Filter>Header Files\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="clsTrip.h">
+      <Filter>Header Files\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Blood.h">
+      <Filter>Header Files\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="BloodBank.h">
+      <Filter>Header Files\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="clsAddMinstryScreen.h">
+      <Filter>Header Files\Owner Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="clsNumberOfMinstriesScreen.h">
+      <Filter>Header Files\Owner Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="clsNumberOfCitizinesScreen.h">
+      <Filter>Header Files\Owner Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="clsAddEmployeeScreen.h">
+      <Filter>Header Files\Owner Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="clsRemoveEmployeeScreen.h">
+      <Filter>Header Files\Owner Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="clsEditMinistryScreen.h">
+      <Filter>Header Files\Owner Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="clsOwner.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="clsRemoveExistingMinistryScreen.h">
+      <Filter>Header Files\Owner Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="clsOwnerMainMenuScreen.h">
+      <Filter>Header Files\Owner Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="clsEditMinistryInfoScreen.h">
+      <Filter>Header Files\Owner Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="clsLoginScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsFillFormScreen.h">
+      <Filter>Header Files\Citzen Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="clsScreen.h">
+      <Filter>Header Files\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="clsVisaCard.h">
+      <Filter>Header Files\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsNumberOfEmployeesScreen.h">
+      <Filter>Header Files\Owner Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="clsMinistryOfElectricity.h">
+      <Filter>Header Files\Ministries</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

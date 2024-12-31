@@ -1,0 +1,67 @@
+31113081814123|-|Electronics|-|2021|-|96|-|60|-|Dr: Khaled Fathi|-|Secondary
+30507021813567|-|Data Introduction to Computer Science|-|2021|-|99|-|64|-|Dr: Haba Rashed|-|Preparatory
+30507021813567|-|Data Structure|-|2022|-|82|-|61|-|Dr: Haba Rashed|-|Primary
+30507021813567|-|File Organization|-|2024|-|91|-|67|-|Dr: Almohammady|-|Secondary
+31517021814567|-|Programming 2|-|2021|-|80|-|59|-|Dr: Alaa Zaky|-|Preparatory
+31618031814678|-|Data Structure|-|2023|-|75|-|59|-|Dr: Haba Rashed|-|Secondary
+31719041814789|-|Electronics|-|2021|-|96|-|60|-|Dr: Khaled Fathi|-|Preparatory
+31820051814890|-|Data Introduction to Computer Science|-|2021|-|99|-|64|-|Dr: Haba Rashed|-|Primary
+31921061814901|-|File Organization|-|2020|-|70|-|59|-|Dr: Haba Rashed|-|Secondary
+32022071815012|-|Data Structure|-|2022|-|82|-|61|-|Dr: Haba Rashed|-|Preparatory
+32123081815123|-|Electronics|-|2020|-|72|-|69|-|Dr: Khaled Fathi|-|Primary
+32224091815234|-|Data Introduction to Computer Science|-|2021|-|83|-|59|-|Dr: Almohammady|-|Secondary
+30407011813654|-|Programming 2|-|2021|-|80|-|59|-|Dr: Alaa Zaky|-|Primary
+30507021813567|-|Data Structure|-|2022|-|87|-|61|-|Dr: Haba Rashed|-|Secondary
+30608031813678|-|File Organization|-|2021|-|84|-|57|-|Dr: Almohammady|-|Preparatory
+30709041813789|-|Electronics|-|2022|-|99|-|52|-|Dr: Haba Rashed|-|Primary
+30810051813890|-|Data Introduction to Computer Science|-|2021|-|99|-|64|-|Dr: Haba Rashed|-|Preparatory
+30911061813901|-|Data Structure|-|2020|-|73|-|65|-|Dr: Almohammady|-|Secondary
+31012071814012|-|File Organization|-|2022|-|85|-|61|-|Dr: Alaa Zaky|-|Preparatory
+31113081814123|-|Electronics|-|2021|-|96|-|60|-|Dr: Khaled Fathi|-|Secondary
+31214091814234|-|Data Introduction to Computer Science|-|2021|-|99|-|64|-|Dr: Haba Rashed|-|Preparatory
+31315001814345|-|Data Structure|-|2022|-|82|-|61|-|Dr: Haba Rashed|-|Primary
+31416011814456|-|File Organization|-|2024|-|91|-|67|-|Dr: Almohammady|-|Secondary
+31517021814567|-|Programming 2|-|2021|-|80|-|59|-|Dr: Alaa Zaky|-|Preparatory
+31618031814678|-|Data Structure|-|2023|-|75|-|59|-|Dr: Haba Rashed|-|Secondary
+31719041814789|-|Electronics|-|2021|-|96|-|60|-|Dr: Khaled Fathi|-|Preparatory
+31820051814890|-|Data Introduction to Computer Science|-|2021|-|99|-|64|-|Dr: Haba Rashed|-|Primary
+30507021813567|-|File Organization|-|2020|-|70|-|59|-|Dr: Haba Rashed|-|Secondary
+32022071815012|-|Data Structure|-|2022|-|82|-|61|-|Dr: Haba Rashed|-|Preparatory
+32123081815123|-|Electronics|-|2020|-|72|-|69|-|Dr: Khaled Fathi|-|Primary
+32224091815234|-|Data Introduction to Computer Science|-|2021|-|83|-|59|-|Dr: Almohammady|-|Secondary
+32325001815345|-|File Organization|-|2024|-|91|-|67|-|Dr: Almohammady|-|Preparatory
+32426011815456|-|Programming 2|-|2021|-|80|-|59|-|Dr: Alaa Zaky|-|Primary
+32527021815567|-|Data Structure|-|2022|-|87|-|61|-|Dr: Haba Rashed|-|Secondary
+32628031815678|-|File Organization|-|2021|-|84|-|57|-|Dr: Almohammady|-|Preparatory
+32729041815789|-|Electronics|-|2022|-|99|-|52|-|Dr: Haba Rashed|-|Primary
+32830051815890|-|Data Introduction to Computer Science|-|2021|-|99|-|64|-|Dr: Haba Rashed|-|Preparatory
+32931061815901|-|Data Structure|-|2020|-|73|-|65|-|Dr: Almohammady|-|Secondary
+33032071816012|-|File Organization|-|2022|-|85|-|61|-|Dr: Alaa Zaky|-|Preparatory
+33133081816123|-|Electronics|-|2021|-|96|-|60|-|Dr: Khaled Fathi|-|Secondary
+33234091816234|-|Data Introduction to Computer Science|-|2021|-|99|-|64|-|Dr: Haba Rashed|-|Preparatory
+33335001816345|-|Data Structure|-|2022|-|82|-|61|-|Dr: Haba Rashed|-|Primary
+33436011816456|-|File Organization|-|2024|-|91|-|67|-|Dr: Almohammady|-|Secondary
+33537021816567|-|Programming 2|-|2021|-|80|-|59|-|Dr: Alaa Zaky|-|Preparatory
+33638031816678|-|Data Structure|-|2023|-|75|-|59|-|Dr: Haba Rashed|-|Secondary
+33739041816789|-|Electronics|-|2021|-|96|-|60|-|Dr: Khaled Fathi|-|Preparatory
+33840051816890|-|Data Introduction to Computer Science|-|2021|-|99|-|64|-|Dr: Haba Rashed|-|Primary
+33941061816901|-|File Organization|-|2020|-|70|-|59|-|Dr: Haba Rashed|-|Secondary
+34042071817012|-|Data Structure|-|2022|-|82|-|61|-|Dr: Haba Rashed|-|Preparatory
+34143081817123|-|Electronics|-|2020|-|72|-|69|-|Dr: Khaled Fathi|-|Primary
+34244091817234|-|Data Introduction to Computer Science|-|2021|-|83|-|59|-|Dr: Almohammady|-|Secondary
+34345001817345|-|File Organization|-|2024|-|91|-|67|-|Dr: Almohammady|-|Preparatory
+34446011817456|-|Programming 2|-|2021|-|80|-|59|-|Dr: Alaa Zaky|-|Primary
+34547021817567|-|Data Structure|-|2022|-|87|-|61|-|Dr: Haba Rashed|-|Secondary
+34648031817678|-|File Organization|-|2021|-|84|-|57|-|Dr: Almohammady|-|Preparatory
+34749041817789|-|Electronics|-|2022|-|99|-|52|-|Dr: Haba Rashed|-|Primary
+34850051817890|-|Data Introduction to Computer Science|-|2021|-|99|-|64|-|Dr: Haba Rashed|-|Preparatory
+34951061817901|-|Data Structure|-|2020|-|73|-|65|-|Dr: Almohammady|-|Secondary
+35052071818012|-|File Organization|-|2022|-|85|-|61|-|Dr: Alaa Zaky|-|Preparatory
+35153081818123|-|Electronics|-|2021|-|96|-|60|-|Dr: Khaled Fathi|-|Secondary
+30407011813654|-|Programming 2|-|2021|-|80|-|59|-|Dr: Alaa Zaky|-|Primary
+30507021813567|-|Data Structure|-|2022|-|87|-|61|-|Dr: Haba Rashed|-|Secondary
+30608031813678|-|File Organization|-|2021|-|84|-|57|-|Dr: Almohammady|-|Preparatory
+30709041813789|-|Electronics|-|2022|-|99|-|52|-|Dr: Haba Rashed|-|Primary
+30810051813890|-|Data Introduction to Computer Science|-|2021|-|99|-|64|-|Dr: Haba Rashed|-|Preparatory
+30911061813901|-|Data Structure|-|2020|-|73|-|65|-|Dr: Almohammady|-|Secondary
+31012071814012|-|File Organization|-|2022|-|85|-|61|-|Dr: Alaa Zaky|-|Preparatory

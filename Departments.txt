@@ -1,0 +1,9 @@
+Education|-|Primary School
+Education|-|Preparatory School
+Education|-|Secondary School
+Education|-|Electricity Billing Services
+Interior|-|Civil Status
+Transportation|-|Ticket Reservation Office
+Finance|-|Currency Services Office
+HealthAndPopulation|-|Blood Service Center
+Tourism|-|Tourism Services Office

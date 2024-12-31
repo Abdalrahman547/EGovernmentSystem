@@ -1,0 +1,16 @@
+Al-Manira|-|Cairo|-|B+|-|117
+Om El-Masryeen|-|Giza|-|O+|-|50
+Qalyoub Central|-|Qalyubia|-|A-|-|40
+Abu Qir|-|Alexandria|-|B-|-|60
+Mahalla Kobra General|-|Gharbia|-|AB+|-|30
+Fayyoum Central|-|Sharqia|-|O-|-|25
+Koum Hamada Central|-|Beheira|-|A+|-|51
+Marsa Matrouh|-|Marsa Matrouh|-|B+|-|12
+Damietta General|-|Damietta|-|AB-|-|22
+Dakhla Central|-|New Valley|-|A-|-|35
+Hurghada|-|Red Sea|-|O+|-|10
+Arish General|-|North Sinai|-|B+|-|27
+Dahab|-|South Sinai|-|AB+|-|5
+Port Said General|-|Port Said|-|A+|-|19
+Qantara West|-|Ismailia|-|O-|-|50
+Suez General|-|Suez|-|B-|-|25

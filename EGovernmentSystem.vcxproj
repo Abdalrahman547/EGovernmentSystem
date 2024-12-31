@@ -130,12 +130,42 @@
     <ClCompile Include="EGovernmentSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Blood.h" />
+    <ClInclude Include="BloodBank.h" />
+    <ClInclude Include="clsAddEmployeeScreen.h" />
+    <ClInclude Include="clsAddMinstryScreen.h" />
     <ClInclude Include="clsCitizen.h" />
+    <ClInclude Include="clsEditMinistryInfoScreen.h" />
+    <ClInclude Include="clsLoginScreen.h" />
+    <ClInclude Include="clsMinistryOfElectricity.h" />
+    <ClInclude Include="clsNumberOfEmployeesScreen.h" />
+    <ClInclude Include="clsNumberOfMinstriesScreen.h" />
     <ClInclude Include="clsDate.h" />
+    <ClInclude Include="clsDepartment.h" />
+    <ClInclude Include="clsEditMinistryScreen.h" />
     <ClInclude Include="clsEmployee.h" />
+    <ClInclude Include="clsExam.h" />
+    <ClInclude Include="clsFillFormScreen.h" />
+    <ClInclude Include="clsForm.h" />
     <ClInclude Include="clsInputValidate.h" />
+    <ClInclude Include="clsMinistryOfEducation.h" />
+    <ClInclude Include="clsMinistry.h" />
+    <ClInclude Include="clsMinistryOfInterior.h" />
+    <ClInclude Include="clsMinistryOfTransportaion.h" />
+    <ClInclude Include="clsNumberOfCitizinesScreen.h" />
+    <ClInclude Include="clsOwner.h" />
+    <ClInclude Include="clsOwnerMainMenuScreen.h" />
     <ClInclude Include="clsPerson.h" />
+    <ClInclude Include="clsRemoveEmployeeScreen.h" />
+    <ClInclude Include="clsRemoveExistingMinistryScreen.h" />
+    <ClInclude Include="clsScreen.h" />
     <ClInclude Include="clsString.h" />
+    <ClInclude Include="clsTrip.h" />
+    <ClInclude Include="clsVisaCard.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="MinistryOfFinance.h" />
+    <ClInclude Include="MinistryOfHealthAndPopulation.h" />
+    <ClInclude Include="MinistryOfTourism.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
